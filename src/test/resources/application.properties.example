@@ -1,0 +1,13 @@
+server.port=0
+
+spring.application.name=todo
+
+spring.datasource.url=jdbc:postgresql://localhost/${spring.application.name}
+spring.datasource.username=${spring.application.name}
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+# Actuator
+management.endpoint.health.show-details=always
+management.endpoints.web.exposure.include=*
